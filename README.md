@@ -5,4 +5,3 @@ Compares pages and metadata between Dynamics 365 Business Central older (BC14) a
 ## Installation & Build
 1. Run `npm install`
 2. Run `npm run build`
-3. Load the `dist/` folder as an unpacked extension in Chrome/Edge.
