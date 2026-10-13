@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Business Central Page Differ",
+  "version": "1.0.0",
+  "description": "Compares pages and metadata between Dynamics 365 Business Central older (BC14) and modern (BC28) web clients.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "sidePanel",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "src/background/background.ts",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "src/sidepanel/index.html"
+  },
+  "options_page": "src/options/index.html",
+  "action": {
+    "default_title": "Open BC Page Differ"
+  }
+}
